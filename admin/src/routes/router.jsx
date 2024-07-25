@@ -2,6 +2,10 @@ import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 import GuestLayout from '../layouts/GuestLayout';
 import Dashboard from '../admin/Dashboard';
+import Appearance from '../admin/Appearance';
+import Users from '../admin/Users';
+import Tools from '../admin/Tools';
+import Settings from '../admin/Settings';
 import Register from '../auth/Register';
 import Login from '../auth/Login';
 import ProtectedRoute from './ProtectedRoute';
@@ -19,6 +23,22 @@ const router = createBrowserRouter([
                     {
                         path: '/',
                         element: <Dashboard />,
+                    },
+                    {
+                        path: '/appearance',
+                        element: <Appearance />,
+                    },
+                    {
+                        path: '/users',
+                        element: <Users />,
+                    },
+                    {
+                        path: '/tools',
+                        element: <Tools />,
+                    },
+                    {
+                        path: '/settings',
+                        element: <Settings />,
                     },
                 ],
             },
